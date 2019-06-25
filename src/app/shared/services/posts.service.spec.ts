@@ -3,6 +3,7 @@ import { HttpClientTestingModule, HttpTestingController } from '@angular/common/
 import { PostsService } from './posts.service';
 import { IPostList } from '../interfaces/post-list.interface';
 import { IPostListItem } from '../interfaces/post-list-item.interface';
+import { environment } from 'src/environments/environment';
 
 describe('PostsService', () => {
     let service: PostsService;
@@ -31,7 +32,7 @@ describe('PostsService', () => {
             const response = service.getPosts(); //promise
 
             //2. Stworzyc server HTTP ktory bedzie zwracal mockowe dane
-            const server = httpMock.expectOne('assets/posts.json');
+            const server = httpMock.expectOne(environment.postsUrl);
 
             const fakePostList = [
                 { id: 'hjk123' },
@@ -65,7 +66,7 @@ describe('PostsService', () => {
             const response = service.getPostById(postId); // PROMISE
 
             //2. Strowzyc serwer HTTP, ktory bedzie zwracal mockowe dane
-            const server = httpMock.expectOne('assets/posts.json');
+            const server = httpMock.expectOne(environment.postsUrl);
 
             const fakePost = { id: 'aaaaaaa' } as IPostListItem;
 

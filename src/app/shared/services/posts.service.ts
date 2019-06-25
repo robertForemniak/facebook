@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { IResponsePosts } from '../interfaces/response-posts.interface';
 import { IPostListItem } from '../interfaces/post-list-item.interface';
 import { HttpTestingController } from '@angular/common/http/testing';
+import { environment } from 'src/environments/environment';
 
 
 
@@ -18,7 +19,7 @@ export class PostsService {
   }
 
   async getPosts() {
-    const url = 'assets/posts.json';
+    const url = environment.postsUrl;
     const response = await this.http.get<IResponsePosts>(url).toPromise();
     return response.posts;
   }
