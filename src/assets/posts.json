@@ -1,22 +1,78 @@
-[
 {
-    "id": "jk123145gf",
-    "body": "nie mam psa!",
-    "author":{
-      "name": "wuj Krzyś"
-    },
-    "images": [
-      "https://picsum.photos/id/237/200/50"
-    ]
-  },
-  {
-    "id": "jk12dd145gf",
-    "body": "nie mam !",
-    "author":{
-      "name": "wuj romś"
-    },
-    "images": [
-      "https://picsum.photos/id/237/200/50"
+    "posts": [
+      {
+        "id": "13a77847-0d9a-51d0-8f81-86e2a70c45ba",
+        "created_time": "Fri Mar 22 2019 17:01:34 GMT+0100 (czas środkowoeuropejski standardowy)",
+        "author": {
+          "id": "35da5b33-d534-5e8b-8030-ff2436616cce",
+          "name": "Earnestine Kuhn",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg"
+        },
+        "body": "Hudu pev vakanuev jawrusgos jauwo ateuta pevcur tuimle na fofmocap tenurze ovu wusti vi lifij okiol buwe jol.",
+        "images": [
+          "https://picsum.photos/id/955/300/150/"
+        ]
+      },
+      {
+        "id": "9bd46609-709b-551d-a15d-86a3ed5b1fe8",
+        "created_time": "Thu Mar 28 2019 07:26:15 GMT+0100 (czas środkowoeuropejski standardowy)",
+        "author": {
+          "id": "b3bafb93-3901-5b3f-9895-3eb64ff99342",
+          "name": "Ava Walter",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/sweetdelisa/128.jpg"
+        },
+        "body": "Inalieb meg neze zi iwpamlat ave buc cewsak meprafos hak elodne retsausa pucucpow lororo jigitwi hav gule.",
+        "images": [
+          "https://picsum.photos/id/82/300/150/",
+          "https://picsum.photos/id/849/300/150/",
+          "https://picsum.photos/id/68/300/150/",
+          "https://picsum.photos/id/1036/300/150/"
+        ]
+      },
+      {
+        "id": "2ff31a1a-6e0c-5564-b902-5070dfa90f5d",
+        "created_time": "Thu Aug 30 2018 16:34:52 GMT+0200 (czas środkowoeuropejski letni)",
+        "author": {
+          "id": "1d0abaa8-367e-5e1d-bc9a-b4e7ce8769f4",
+          "name": "Louisa Schowalter",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/brandonburke/128.jpg"
+        },
+        "body": "Ceojner to lal lawumiow macoz kemmuwci sijjamwod iltidomu zewhuno kobo souf welze bovguzaw icizaek af besawbet.",
+        "images": [
+          "https://picsum.photos/id/455/300/150/",
+          "https://picsum.photos/id/315/300/150/",
+          "https://picsum.photos/id/585/300/150/"
+        ]
+      },
+      {
+        "id": "6e982026-78d7-5e06-b29a-99bdbde95a18",
+        "created_time": "Sun Feb 24 2019 13:35:40 GMT+0100 (czas środkowoeuropejski standardowy)",
+        "author": {
+          "id": "63fc09a6-096d-5b47-b1bd-e978ed3cbb41",
+          "name": "Ross Prohaska",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/hugomano/128.jpg"
+        },
+        "body": "Nigsopab bucja nebupwu se nuvi agre bitdibur hitgu wuj hutjerba vikul onnig ru ki ru ziku mukbam mo.",
+        "images": [
+          "https://picsum.photos/id/679/300/150/"
+        ]
+      },
+      {
+        "id": "4d82bd89-b260-514d-9d72-0d6213709277",
+        "created_time": "Wed Nov 21 2018 15:54:57 GMT+0100 (czas środkowoeuropejski standardowy)",
+        "author": {
+          "id": "e456df67-2033-54e6-8fa9-4192549eb7d5",
+          "name": "Rozella Doyle",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/konus/128.jpg"
+        },
+        "body": "Ko fenempov vihvu sevosre zatosel ajonede zulas zes ger hir en el cupbu paj eplasi uko su.",
+        "images": [
+          "https://picsum.photos/id/163/300/150/",
+          "https://picsum.photos/id/139/300/150/",
+          "https://picsum.photos/id/7/300/150/",
+          "https://picsum.photos/id/661/300/150/",
+          "https://picsum.photos/id/838/300/150/"
+        ]
+      }
     ]
   }
-]
