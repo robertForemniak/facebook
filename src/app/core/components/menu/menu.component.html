@@ -1,10 +1,14 @@
-<nav>
-  <ul class ="nav">
+<nav class="m3">
+  <ul class ="nav nav-tabs">
     <li class="nav-item">
       <a 
       class = "nav-link"
       routerLink= "/"
-      >Strona główna</a>
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}"
+      >
+      Strona główna
+    </a>
     </li>
     <li>
       <a 
