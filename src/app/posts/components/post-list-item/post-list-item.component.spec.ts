@@ -5,6 +5,7 @@ import { PostListItemComponent } from './post-list-item.component';
 describe('PostListItemComponent', () => {
   let component: PostListItemComponent;
   let fixture: ComponentFixture<PostListItemComponent>;
+  let $component: any;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -17,8 +18,11 @@ describe('PostListItemComponent', () => {
     fixture = TestBed.createComponent(PostListItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    $component = fixture.nativeElement;
   });
-
+  afterEach(() => {
+    $component.remove();
+  });
   it('should create', () => {
     expect(component).toBeTruthy();
   });

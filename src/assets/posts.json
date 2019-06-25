@@ -1,0 +1,22 @@
+[
+{
+    "id": "jk123145gf",
+    "body": "nie mam psa!",
+    "author":{
+      "name": "wuj Krzyś"
+    },
+    "images": [
+      "https://picsum.photos/id/237/200/50"
+    ]
+  },
+  {
+    "id": "jk12dd145gf",
+    "body": "nie mam !",
+    "author":{
+      "name": "wuj romś"
+    },
+    "images": [
+      "https://picsum.photos/id/237/200/50"
+    ]
+  }
+]

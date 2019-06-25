@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostsService } from 'src/app/shared/services/posts.service';
 
 @Component({
   selector: 'app-home-page',
@@ -6,32 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-allPosts =[  
-{
-  id: 'jk123145gf',
-  body: "nie mam psa!",
-  author:{
-    name: 'wuj Krzyś'
-  },
-  images: [
-    "https://picsum.photos/id/237/200/50"
-  ]
-},
-{
-  id: 'jk12dd145gf',
-  body: "nie mam !",
-  author:{
-    name: 'wuj romś'
-  },
-  images: [
-    "https://picsum.photos/id/237/200/50"
-  ]
-}
-]
+allPosts = null;
 
-  constructor() { }
+
+  constructor(
+    private postsService: PostsService
+  ) { }
 
   ngOnInit() {
+    this.setupPosts();
   }
-
+ async setupPosts(){
+   this.allPosts = await this.postsService.getPosts();
+ }
 }
