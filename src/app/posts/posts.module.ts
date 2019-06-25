@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { PostListItemComponent } from './components/post-list-item/post-list-item.component';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
+import { PostProfilePageComponent } from './pages/post-profile-page/post-profile-page.component';
 
 @NgModule({
   declarations: [
     PostListComponent, 
-    PostListItemComponent
+    PostListItemComponent, PostProfilePageComponent
   ],
   exports: [
     PostListComponent, 
@@ -16,6 +18,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
+    RouterModule,
   ]
 })
 export class PostsModule { }

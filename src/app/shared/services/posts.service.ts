@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IResponsePosts} from '../interfaces/response-posts.interface';
+import { IResponsePosts } from '../interfaces/response-posts.interface';
+import { IPostListItem } from '../interfaces/post-list-item.interface';
+import { HttpTestingController } from '@angular/common/http/testing';
 
 
 
@@ -16,10 +18,19 @@ export class PostsService {
   }
 
   async getPosts() {
-    const url ='assets/posts.json';
-    const response= await this.http.get<IResponsePosts>(url).toPromise();
+    const url = 'assets/posts.json';
+    const response = await this.http.get<IResponsePosts>(url).toPromise();
     return response.posts;
   }
+
+  async getPostById(postId: string): Promise<IPostListItem> {
+    const posts = await this.getPosts();
+    const foundPost = posts.find((post) => {
+      return post.id === postId;
+    })
+    return foundPost;
+  }
+
 
 }
 
