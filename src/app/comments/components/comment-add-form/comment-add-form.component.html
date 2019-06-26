@@ -1,0 +1,36 @@
+<form
+    class="form-inline"
+    (ngSubmit)="onSubmit(commentForm)"
+    #commentForm="ngForm"
+>
+    <pre>
+  {{body.errors | json}}
+</pre>
+    <div class="form-group mr-3">
+        <input
+            type="text"
+            class="form-control"
+            placeholder="Wpisz Komentarz..."
+            name="body"
+            #body="ngModel"
+            [(ngModel)]="comment.body"
+            required
+            minlength="3"
+            
+        >
+    </div>
+    <button
+        type="submit"
+        class="btn btn-primary mb-2"
+        [disabled]="commentForm.invalid"
+    >
+        Dodaj
+    </button>
+    <small
+        class="alert alert-danger"
+        *ngIf="body.errors && body.touched"
+    >
+        <span *ngIf="body.errors['required']">aby dodac komentarz wpisz tekst</span>
+        <span *ngIf="body.errors['minlength']">minimalna ilosc znaków to 3</span>
+    </small>
+</form>

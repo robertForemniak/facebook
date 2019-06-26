@@ -1,0 +1,13 @@
+
+<ng-container *ngIf="comment">
+    <div class="media">
+        <img 
+        [src]="getCommentAuthorAvatarUrl()" 
+        class="mr-3" 
+        alt="...">
+        <div class="media-body">
+          
+         <p class="comment-body">{{ comment.body }}</p>
+        </div>
+      </div>
+</ng-container>

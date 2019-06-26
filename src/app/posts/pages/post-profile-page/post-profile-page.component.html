@@ -1,14 +1,11 @@
 <ng-container *ngIf="post">
-    <div
-    class="card m-3"
-    style="width: 18rem;"
-  >
+    <div>
     <!-- <img src="{{ post.images[0] }}" class="card-img-top" alt=""> -->
     <img
         [src]="post.images[0]"
         class="post.author.name"
         routerLink="posts/{{post.id}}"
-        alt
+        alt=""
     >
     <div class="card-body">
       <h5 class="card-title">{{post.author.name}}</h5>

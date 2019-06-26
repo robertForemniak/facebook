@@ -22,7 +22,14 @@
             <p class="card-text text-justify">{{post.body}}.</p>
 
         </div>
-        <div class="card-footer text-muted">2 days ago</div>
+        <div class="card-footer text-muted">
+          <app-comment-list
+          [comments]= "post.comments"
+          ></app-comment-list>
+          <app-comment-add-form
+            (addComment)="onAddComment($event)">
+          </app-comment-add-form>
+        </div>
     </div>
 
 </ng-container>
