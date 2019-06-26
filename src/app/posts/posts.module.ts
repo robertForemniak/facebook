@@ -6,22 +6,27 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { PostProfilePageComponent } from './pages/post-profile-page/post-profile-page.component';
 import { CommentsModule } from '../comments/comments.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PostAddFormComponent } from './components/post-add-form/post-add-form.component';
 
 @NgModule({
   declarations: [
     PostListComponent,
     PostListItemComponent,
-    PostProfilePageComponent
+    PostProfilePageComponent,
+    PostAddFormComponent
   ],
   exports: [
     PostListComponent,
-    PostListItemComponent
+    PostListItemComponent,
+    PostAddFormComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule,
-    CommentsModule
+    CommentsModule,
+    ReactiveFormsModule,
   ]
 })
 export class PostsModule { }

@@ -20,4 +20,8 @@ allPosts = null;
  async setupPosts(){
    this.allPosts = await this.postsService.getPosts();
  }
+ onAddPost(post){
+  this.allPosts.unshift(post);
+  this.postsService.savePosts(this.allPosts);
+}
 }

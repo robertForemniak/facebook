@@ -9,6 +9,9 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { PostsModule } from '../posts/posts.module';
 import { SharedModule } from '../shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PostListComponent } from '../posts/components/post-list/post-list.component';
+import { PostListItemComponent } from '../posts/components/post-list-item/post-list-item.component';
+import { PostAddFormComponent } from '../posts/components/post-add-form/post-add-form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     PostsModule,
     SharedModule,
     HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
